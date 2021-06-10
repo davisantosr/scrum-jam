@@ -24,3 +24,9 @@ export const Button = styled.button`
     filter: brightness(85%);
   }
 `
+
+export const LocalVideo = styled.div`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+`
