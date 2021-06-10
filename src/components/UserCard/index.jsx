@@ -1,11 +1,20 @@
 import { Container, Circle, Text } from './styles'
 
-export default function UserCard() {
+import styles from './user-card.module.css'
+
+export default function UserCard({ srcObject }) {
+  const setVideo = (video) => {
+    if (video) {
+      video.srcObject = srcObject
+    }
+  }
   return (
     <Container>
-      <Circle>
+      {!srcObject && <Circle>
         <Text>GC</Text>
-      </Circle>
+      </Circle>}
+      {srcObject &&
+        <video className={styles.video} autoPlay muted playsInline ref={setVideo}></video>}
     </Container>
   )
 }
