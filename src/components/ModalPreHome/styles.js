@@ -17,8 +17,8 @@ export const BackDrop = styled.div`
 `
 
 export const Container = styled.div`
-  width: 500px;
-  height: 300px;
+  width: 30rem;
+  height: 28rem;
   background-color: ${({ theme }) => theme.backgroundMedium};
   border-radius: 5px;
   overflow: hidden;
@@ -50,5 +50,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 2rem 1rem;
+  justify-content: space-between;
 `
